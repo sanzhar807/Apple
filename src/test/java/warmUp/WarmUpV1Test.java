@@ -75,4 +75,11 @@ public class WarmUpV1Test {
         Assertions.assertTrue(obj.nearHundred(90));
         Assertions.assertFalse(obj.nearHundred(89));
     }
+
+    @Test
+    void posNegT(){
+        Assertions.assertTrue(obj.posNeg(1,-1,false));
+        Assertions.assertFalse(obj.posNeg(-4,-5,false));
+        Assertions.assertTrue(obj.posNeg(5,-5,false));
+    }
 }
