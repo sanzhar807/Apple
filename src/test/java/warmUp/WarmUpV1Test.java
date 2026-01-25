@@ -82,4 +82,10 @@ public class WarmUpV1Test {
         Assertions.assertFalse(obj.posNeg(-4,-5,false));
         Assertions.assertTrue(obj.posNeg(5,-5,false));
     }
+    @Test
+    void notStringT(){
+        Assertions.assertEquals("not candy",obj.notString("not candy"));
+        Assertions.assertEquals("not bad",obj.notString("not bad"));
+        Assertions.assertEquals("not x",obj.notString("x"));
+    }
 }

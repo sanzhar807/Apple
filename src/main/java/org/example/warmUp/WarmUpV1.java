@@ -8,14 +8,12 @@ public class WarmUpV1 {
         }
         return false;
     }
-
     public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
         if(aSmile && bSmile) return true;
         if(!aSmile && !bSmile) return true;
         if (aSmile || bSmile ) return false;
         return false;
     }
-
     public int sumDouble(int a, int b) {
         int sum=a+b;
         if(a==b){
@@ -24,7 +22,6 @@ public class WarmUpV1 {
 
         return sum;
     }
-
     public int diff21(int n) {
         if(n<= 21){
             return 21-n;
@@ -32,28 +29,27 @@ public class WarmUpV1 {
             return(n-21)*2;
         }
     }
-
     public boolean parrotTrouble(boolean talking, int hour) {
         return(talking && (hour<7 || hour>20));
     }
-
     public boolean makes10(int a, int b) {
         if(a==10 || b==10) return true;
         else if (a+b == 10) return true;
         return false;
     }
-
     public boolean nearHundred(int n) {
         if(n >=90 && n<=110) return true;
         if(n>= 190 && n<= 210) return true;
         return false;
     }
-
     public boolean posNeg(int a, int b, boolean negative) {
         if ( negative == true && a<0 && b <0) return true;
         if(a<0 && b>0 && negative !=true) return true;
         if(a>0 && b<0 && negative != true) return true;
         return false;
     }
-
+    public String notString(String str) {
+        if(str.startsWith("not")) return str;
+        return "not ".concat(str);
+    }
 }
