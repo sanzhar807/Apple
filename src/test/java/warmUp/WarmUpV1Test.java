@@ -25,5 +25,15 @@ public class WarmUpV1Test {
         Assertions.assertTrue(obj.sleepIn(false,true));
     }
 
+    @BeforeEach
+    void beforeEach(){
+        System.out.println("Second");
+    }
 
+    @Test
+    void monkeyTroubleT(){
+        Assertions.assertTrue(obj.monkeyTrouble(true,true));
+        Assertions.assertTrue(obj.monkeyTrouble(false,false));
+        Assertions.assertFalse(obj.monkeyTrouble(false,true));
+    }
 }
