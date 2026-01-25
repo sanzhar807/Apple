@@ -100,4 +100,10 @@ public class WarmUpV1Test {
         Assertions.assertEquals("ehocolatC",obj.frontBack("Chocolate"));
         Assertions.assertEquals("aavJ",obj.frontBack("Java"));
     }
+    @Test
+    void front3T(){
+        Assertions.assertEquals("JavJavJav",obj.front3("Java"));
+        Assertions.assertEquals("ChoChoCho",obj.front3("Chocolate"));
+        Assertions.assertEquals("aaa",obj.front3("a"));
+    }
 }

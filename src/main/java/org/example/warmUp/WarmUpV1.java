@@ -61,4 +61,9 @@ public class WarmUpV1 {
         if(str.length() <= 1)return str;
         return str.substring(str.length()-1).concat(str.substring(1,str.length()-1)).concat(str.substring(0,1));
     }
+    public String front3(String str) {
+        if (str.length() <1) return str;
+        if(str.length()<=3) return str.concat(str).concat(str);
+        return str.substring(0,3).concat(str.substring(0,3)).concat(str.substring(0,3));
+    }
 }
