@@ -42,10 +42,16 @@ public class WarmUpV1Test {
         System.out.println("Third");
     }
     @Test
-    void sumDouble(){
+    void sumDoubleT(){
         Assertions.assertEquals(3,obj.sumDouble(1,2));
         Assertions.assertEquals(8,obj.sumDouble(2,2));
         Assertions.assertEquals(12,obj.sumDouble(3,3));
     }
 
+    @Test
+    void diff21T(){
+        Assertions.assertEquals(2,obj.diff21(19));
+        Assertions.assertEquals(10,obj.diff21(11));
+        Assertions.assertEquals(21,obj.diff21(0));
+    }
 }
