@@ -61,4 +61,11 @@ public class WarmUpV1Test {
         Assertions.assertFalse(obj.parrotTrouble(true,7));
         Assertions.assertTrue(obj.parrotTrouble(true,21));
     }
+
+    @Test
+    void makes10T(){
+        Assertions.assertTrue(obj.makes10(9,10));
+        Assertions.assertFalse(obj.makes10(9,9));
+        Assertions.assertTrue(obj.makes10(1,9));
+    }
 }
