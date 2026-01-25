@@ -52,4 +52,9 @@ public class WarmUpV1 {
         if(str.startsWith("not")) return str;
         return "not ".concat(str);
     }
+    public String missingChar(String str, int n) {
+        StringBuilder word = new StringBuilder(str);
+        word.deleteCharAt(n);
+        return word.toString();
+    }
 }

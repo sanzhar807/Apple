@@ -88,4 +88,10 @@ public class WarmUpV1Test {
         Assertions.assertEquals("not bad",obj.notString("not bad"));
         Assertions.assertEquals("not x",obj.notString("x"));
     }
+    @Test
+    void missingCharT(){
+        Assertions.assertEquals("ktten",obj.missingChar("kitten",1));
+        Assertions.assertEquals("itten",obj.missingChar("kitten",0));
+        Assertions.assertEquals("i",obj.missingChar("Hi",0));
+    }
 }
