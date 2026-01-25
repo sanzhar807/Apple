@@ -36,4 +36,16 @@ public class WarmUpV1Test {
         Assertions.assertTrue(obj.monkeyTrouble(false,false));
         Assertions.assertFalse(obj.monkeyTrouble(false,true));
     }
+
+    @BeforeEach
+    void beforeEach1(){
+        System.out.println("Third");
+    }
+    @Test
+    void sumDouble(){
+        Assertions.assertEquals(3,obj.sumDouble(1,2));
+        Assertions.assertEquals(8,obj.sumDouble(2,2));
+        Assertions.assertEquals(12,obj.sumDouble(3,3));
+    }
+
 }
