@@ -54,4 +54,11 @@ public class WarmUpV1Test {
         Assertions.assertEquals(10,obj.diff21(11));
         Assertions.assertEquals(21,obj.diff21(0));
     }
+
+    @Test
+    void parrotTroubleT(){
+        Assertions.assertTrue(obj.parrotTrouble(true,6));
+        Assertions.assertFalse(obj.parrotTrouble(true,7));
+        Assertions.assertTrue(obj.parrotTrouble(true,21));
+    }
 }
