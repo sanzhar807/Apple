@@ -68,4 +68,11 @@ public class WarmUpV1Test {
         Assertions.assertFalse(obj.makes10(9,9));
         Assertions.assertTrue(obj.makes10(1,9));
     }
+
+    @Test
+    void nearHundredT(){
+        Assertions.assertTrue(obj.nearHundred(93));
+        Assertions.assertTrue(obj.nearHundred(90));
+        Assertions.assertFalse(obj.nearHundred(89));
+    }
 }
