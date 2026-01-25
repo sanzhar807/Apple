@@ -94,4 +94,10 @@ public class WarmUpV1Test {
         Assertions.assertEquals("itten",obj.missingChar("kitten",0));
         Assertions.assertEquals("i",obj.missingChar("Hi",0));
     }
+    @Test
+    void frontBackT(){
+        Assertions.assertEquals("eodc",obj.frontBack("code"));
+        Assertions.assertEquals("ehocolatC",obj.frontBack("Chocolate"));
+        Assertions.assertEquals("aavJ",obj.frontBack("Java"));
+    }
 }

@@ -57,4 +57,8 @@ public class WarmUpV1 {
         word.deleteCharAt(n);
         return word.toString();
     }
+    public String frontBack(String str) {
+        if(str.length() <= 1)return str;
+        return str.substring(str.length()-1).concat(str.substring(1,str.length()-1)).concat(str.substring(0,1));
+    }
 }
