@@ -1,4 +1,4 @@
-package calculator;
+package junit.calculator;
 
 import org.example.calculator.Calculator;
 import org.junit.jupiter.api.Assertions;
