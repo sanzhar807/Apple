@@ -1,22 +1,20 @@
 package selenium.locators;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-public class BasicLocators {
+public class BasicLocators extends BaseUiTest {
     @Test
     void byIdTest(){
-        WebDriverManager.firefoxdriver().setup();
-        WebDriver driver = new FirefoxDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().
-                implicitlyWait(Duration.ofSeconds(10));
     driver.get("https://demoqa.com/text-box");
         WebElement userName = driver.findElement(
                 By.id("userName"));
@@ -37,5 +35,56 @@ public class BasicLocators {
             By.id("submit"));
     submit.click();
 
+    }
+
+    @Test
+    void TagName(){
+
+        driver.get("https://demoqa.com/text-box");
+        WebElement textBox = driver.findElement(By.tagName("h1"));
+        System.out.println(textBox.getText());
+
+
+    }
+
+    @Test
+    void byLinkTest(){
+
+        driver.get("https://demoqa.com/links");
+        WebElement homeLink = driver.findElement(By.linkText("Home"));
+        homeLink.click();
+
+    }
+
+    @Test
+    void byPartialLinkTest(){
+        driver.get("https://demoqa.com/links");
+        WebElement homeLink = driver.findElement(By.partialLinkText("Bad"));
+        homeLink.click();
+        WebElement linkRes = driver.findElement(By.id("linkResponse"));
+        String str1 =linkRes.getText();
+        final String cos = "Link has responded with staus 400 and status text Bad Request";
+        Assertions.assertEquals(cos,str1);
+
+    }
+
+    @Test
+    void byName(){
+
+        driver.get("https://www.google.com/");
+        WebElement searchInput = driver.findElement(By.name("q"));
+        searchInput.sendKeys("iphone");
+        searchInput.sendKeys(Keys.ENTER);
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @AfterAll
+    static void after(){
+        driver.quit();
     }
 }
