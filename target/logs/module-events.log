@@ -522,3 +522,9 @@
     }
 ]
 [2026-04-02] 11:46:50:844 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 12:20:34:691 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 12:20:34:735 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+[2026-04-02] 12:20:54:219 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 12:20:54:256 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+[2026-04-02] 12:23:27:817 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 12:23:27:858 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
