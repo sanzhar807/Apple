@@ -59,4 +59,10 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    outputs.upToDateWhen { false }
+    systemProperty("allure.results.directory", "build/allure-results")
+    testLogging {
+        events("passed", "failed", "skipped")
+        showStandardStreams = true
+    }
 }
