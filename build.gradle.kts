@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("io.qameta.allure") version "2.12.0"
+    id("io.qameta.allure") version "2.11.2"
 }
 
 group = "org.example"
@@ -11,7 +11,7 @@ repositories {
 }
 
 allure {
-    version.set("2.33.0")
+    version.set("2.24.0")
 }
 
 val allureVersion = "2.25.0"
