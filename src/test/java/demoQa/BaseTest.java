@@ -47,10 +47,10 @@ protected static IFrameHelper iFrameHelper;
 
     }
 
-    @AfterAll
-    public static void tearDown(){
-        DriverManager.closeDriver();
-        driver.close();
-        driver.quit();
-    }
+//    @AfterAll
+//    public static void tearDown(){
+//        DriverManager.closeDriver();
+//        driver.close();
+//        driver.quit();
+//    }
 }
