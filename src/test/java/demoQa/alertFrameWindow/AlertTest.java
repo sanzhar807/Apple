@@ -9,13 +9,6 @@ public class AlertTest extends BaseTest {
 
     @Test
     void alertTest(){
-        try {
-            driver.getCurrentUrl();
-        } catch (Exception e) {
-            // Если сессия умерла — пересоздаём драйвер
-            driver = DriverManager.getDriver();
-        }
-
         driver.get("https://demoqa.com/alerts");
         alertPage.clickAlertBtn();
         alertHelper.accept();

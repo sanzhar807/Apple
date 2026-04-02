@@ -10,7 +10,9 @@ import org.example.demoQa.helpers.AlertHelper;
 import org.example.demoQa.helpers.BroserHelper;
 import org.example.demoQa.helpers.IFrameHelper;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
 public class BaseTest {
@@ -29,8 +31,8 @@ public class BaseTest {
    protected static Frame frame;
 protected static IFrameHelper iFrameHelper;
 
-    @BeforeAll
-    public static void setUpBrowser(){
+    @BeforeEach
+    public  void setUpBrowser(){
         driver = DriverManager.getDriver();
         textBoxPage = new TextBoxPage();
         webTables = new WebTables();
@@ -47,10 +49,10 @@ protected static IFrameHelper iFrameHelper;
 
     }
 
-//    @AfterAll
-//    public static void tearDown(){
-//        DriverManager.closeDriver();
-//        driver.close();
-//        driver.quit();
-//    }
+    @AfterEach
+    public  void tearDown(){
+        DriverManager.closeDriver();
+        driver.close();
+        driver.quit();
+    }
 }
