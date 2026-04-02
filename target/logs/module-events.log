@@ -528,3 +528,9 @@
 [2026-04-02] 12:20:54:256 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
 [2026-04-02] 12:23:27:817 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
 [2026-04-02] 12:23:27:858 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+[2026-04-02] 21:47:18:317 WebDriverManager: 1220 [INFO] - Using geckodriver 0.36.0 (resolved driver for Firefox 149)
+[2026-04-02] 21:47:18:365 WebDriverManager: 1282 [INFO] - Exporting webdriver.gecko.driver as C:\Users\Vaish\.cache\selenium\geckodriver\win64\0.36.0\geckodriver.exe
+[2026-04-02] 21:49:23:068 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 21:49:23:108 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+[2026-04-02] 21:50:24:839 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 21:50:24:878 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe

@@ -1,11 +1,12 @@
 package selenium.locators;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
+@Tag("UI")
 public class BasicLocators extends BaseUiTest {
     @Test
     void byIdTest(){
@@ -33,21 +34,16 @@ public class BasicLocators extends BaseUiTest {
 
     @Test
     void TagName(){
-
         driver.get("https://demoqa.com/text-box");
         WebElement textBox = driver.findElement(By.tagName("h1"));
         System.out.println(textBox.getText());
-
-
     }
 
     @Test
     void byLinkTest(){
-
         driver.get("https://demoqa.com/links");
         WebElement homeLink = driver.findElement(By.linkText("Home"));
         homeLink.click();
-
     }
 
     @Test
@@ -64,7 +60,6 @@ public class BasicLocators extends BaseUiTest {
 
     @Test
     void byName(){
-
         driver.get("https://www.google.com/");
         WebElement searchInput = driver.findElement(By.name("q"));
         searchInput.sendKeys("iphone");
@@ -74,11 +69,5 @@ public class BasicLocators extends BaseUiTest {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
     }
-
-//    @AfterAll
-//    static void after(){
-//        driver.quit();
-//    }
 }
