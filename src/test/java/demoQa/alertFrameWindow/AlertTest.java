@@ -1,6 +1,7 @@
 package demoQa.alertFrameWindow;
 
 import demoQa.BaseTest;
+import org.example.demoQa.drivers.DriverManager;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 @Tag("UI")
@@ -8,6 +9,13 @@ public class AlertTest extends BaseTest {
 
     @Test
     void alertTest(){
+        try {
+            driver.getCurrentUrl();
+        } catch (Exception e) {
+            // Если сессия умерла — пересоздаём драйвер
+            driver = DriverManager.getDriver();
+        }
+
         driver.get("https://demoqa.com/alerts");
         alertPage.clickAlertBtn();
         alertHelper.accept();
