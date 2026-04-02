@@ -1,10 +1,12 @@
-package warmUp;
+package junit.warmUp;
 
 import org.example.warmUp.WarmUpV1;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class WarmUpV1Test {
     WarmUpV1 obj = new WarmUpV1();
@@ -105,5 +107,23 @@ public class WarmUpV1Test {
         Assertions.assertEquals("JavJavJav",obj.front3("Java"));
         Assertions.assertEquals("ChoChoCho",obj.front3("Chocolate"));
         Assertions.assertEquals("aaa",obj.front3("a"));
+    }
+    @ParameterizedTest
+    @CsvSource({
+            "cat, tcatt",
+            "Hello, oHelloo",
+            "a,aaa"
+    })
+    void backgroundT(String str1, String str2){
+        Assertions.assertEquals(str2,obj.backAround(str1));
+    }
+    @ParameterizedTest
+    @CsvSource({
+            "Hi, 2 ,HiHi",
+            "x,4,xxxx",
+            "code,2,codecode"
+    })
+    void strTimT(String str,int n,String res){
+        Assertions.assertEquals(res,obj.stringTimes(str,n));
     }
 }

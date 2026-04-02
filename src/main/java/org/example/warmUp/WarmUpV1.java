@@ -66,4 +66,17 @@ public class WarmUpV1 {
         if(str.length()<=3) return str.concat(str).concat(str);
         return str.substring(0,3).concat(str.substring(0,3)).concat(str.substring(0,3));
     }
+    public String backAround(String str) {
+        String word = str.substring(str.length()-1);
+        return word.concat(str).concat(word);
+    }
+    public String stringTimes(String str, int n) {
+        int i = 0;
+        String word = "";
+        while (i < n){
+            word += str;
+            i++;
+        }
+        return word;
+    }
 }

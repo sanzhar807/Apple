@@ -1,0 +1,530 @@
+[2026-04-02] 11:46:27:222 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:27:232 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Markus","email":"carl.bogisich@yahoo.com","gender":"Male","status":"inactive"}
+[2026-04-02] 11:46:29:972 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:30:089 HttpRequest: 69 [WARN] - {
+    "id": 8421386,
+    "name": "Markus",
+    "email": "carl.bogisich@yahoo.com",
+    "gender": "male",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:30:091 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:30:247 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:30:249 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Test User","email":"valid1775105190243@test.com","gender":"male","status":"superactive"}
+[2026-04-02] 11:46:30:818 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:30:820 HttpRequest: 69 [WARN] - [
+    {
+        "field": "status",
+        "message": "can't be blank"
+    }
+]
+[2026-04-02] 11:46:30:821 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 11:46:32:453 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:32:453 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Dennise","email":"kip.lemke@hotmail.com","gender":"Male","status":"inactive"}
+[2026-04-02] 11:46:33:326 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:33:329 HttpRequest: 69 [WARN] - {
+    "id": 8421387,
+    "name": "Dennise",
+    "email": "kip.lemke@hotmail.com",
+    "gender": "male",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:33:329 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:33:334 HttpRequest: 30 [INFO] - Performed GET public/v2/users/999999999
+[2026-04-02] 11:46:33:861 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:33:862 HttpRequest: 69 [WARN] - {
+    "message": "Resource not found"
+}
+[2026-04-02] 11:46:33:863 HttpRequest: 70 [WARN] - Status code is: 404
+[2026-04-02] 11:46:33:871 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:33:871 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Khadijah","email":"william.conn@yahoo.com","gender":"Male","status":"active"}
+[2026-04-02] 11:46:34:427 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:34:429 HttpRequest: 69 [WARN] - {
+    "id": 8421388,
+    "name": "Khadijah",
+    "email": "william.conn@yahoo.com",
+    "gender": "male",
+    "status": "active"
+}
+[2026-04-02] 11:46:34:429 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:34:435 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:34:436 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Keenan","email":"harley.denesik@hotmail.com","gender":"Female","status":"inactive"}
+[2026-04-02] 11:46:34:966 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:34:969 HttpRequest: 69 [WARN] - {
+    "id": 8421389,
+    "name": "Keenan",
+    "email": "harley.denesik@hotmail.com",
+    "gender": "female",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:34:970 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:34:974 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:34:974 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Keenan","email":"harley.denesik@hotmail.com","gender":"Female","status":"inactive"}
+[2026-04-02] 11:46:35:521 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:35:522 HttpRequest: 69 [WARN] - [
+    {
+        "field": "email",
+        "message": "has already been taken"
+    }
+]
+[2026-04-02] 11:46:35:523 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 11:46:35:570 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:35:571 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Cleveland","email":"mariann.jones@hotmail.com","gender":"Female","status":"active"}
+[2026-04-02] 11:46:36:116 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:36:117 HttpRequest: 69 [WARN] - {
+    "id": 8421390,
+    "name": "Cleveland",
+    "email": "mariann.jones@hotmail.com",
+    "gender": "female",
+    "status": "active"
+}
+[2026-04-02] 11:46:36:119 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:36:683 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:36:683 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Shannon","email":"jon.legros@hotmail.com","gender":"Female","status":"active"}
+[2026-04-02] 11:46:37:205 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:37:207 HttpRequest: 69 [WARN] - {
+    "id": 8421391,
+    "name": "Shannon",
+    "email": "jon.legros@hotmail.com",
+    "gender": "female",
+    "status": "active"
+}
+[2026-04-02] 11:46:37:207 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:37:211 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:37:211 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Test User","email":"notanemail","gender":"male","status":"active"}
+[2026-04-02] 11:46:37:706 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:37:707 HttpRequest: 69 [WARN] - [
+    {
+        "field": "email",
+        "message": "is invalid"
+    }
+]
+[2026-04-02] 11:46:37:709 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 11:46:37:756 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:37:756 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Leena","email":"reed.skiles@gmail.com","gender":"Female","status":"inactive"}
+[2026-04-02] 11:46:38:301 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:38:304 HttpRequest: 69 [WARN] - {
+    "id": 8421392,
+    "name": "Leena",
+    "email": "reed.skiles@gmail.com",
+    "gender": "female",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:38:304 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:38:309 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:38:310 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Test User","email":"","gender":"female","status":"active"}
+[2026-04-02] 11:46:38:796 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:38:797 HttpRequest: 69 [WARN] - [
+    {
+        "field": "email",
+        "message": "can't be blank"
+    }
+]
+[2026-04-02] 11:46:38:799 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 11:46:38:812 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:38:813 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Deonna","email":"theron.kuhic@yahoo.com","gender":"Female","status":"active"}
+[2026-04-02] 11:46:39:359 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:39:360 HttpRequest: 69 [WARN] - {
+    "id": 8421393,
+    "name": "Deonna",
+    "email": "theron.kuhic@yahoo.com",
+    "gender": "female",
+    "status": "active"
+}
+[2026-04-02] 11:46:39:361 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:39:367 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:39:367 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Malvina","email":"chang.gulgowski@gmail.com","gender":"Female","status":"active"}
+[2026-04-02] 11:46:39:880 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:39:881 HttpRequest: 69 [WARN] - {
+    "id": 8421394,
+    "name": "Malvina",
+    "email": "chang.gulgowski@gmail.com",
+    "gender": "female",
+    "status": "active"
+}
+[2026-04-02] 11:46:39:881 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:39:948 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:39:948 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Osvaldo","email":"gretchen.effertz@gmail.com","gender":"Female","status":"active"}
+[2026-04-02] 11:46:40:484 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:40:492 HttpRequest: 69 [WARN] - {
+    "id": 8421395,
+    "name": "Osvaldo",
+    "email": "gretchen.effertz@gmail.com",
+    "gender": "female",
+    "status": "active"
+}
+[2026-04-02] 11:46:40:493 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:40:499 HttpRequest: 30 [INFO] - Performed GET public/v2/users
+[2026-04-02] 11:46:41:048 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:41:051 HttpRequest: 69 [WARN] - [
+    {
+        "id": 8421395,
+        "name": "Osvaldo",
+        "email": "gretchen.effertz@gmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421394,
+        "name": "Malvina",
+        "email": "chang.gulgowski@gmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421393,
+        "name": "Deonna",
+        "email": "theron.kuhic@yahoo.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421392,
+        "name": "Leena",
+        "email": "reed.skiles@gmail.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8421391,
+        "name": "Shannon",
+        "email": "jon.legros@hotmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421389,
+        "name": "Keenan",
+        "email": "harley.denesik@hotmail.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8421388,
+        "name": "Khadijah",
+        "email": "william.conn@yahoo.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8421387,
+        "name": "Dennise",
+        "email": "kip.lemke@hotmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421386,
+        "name": "Markus",
+        "email": "carl.bogisich@yahoo.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421370,
+        "name": "Julio",
+        "email": "jimmy.hoppe@hotmail.com",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+[2026-04-02] 11:46:41:054 HttpRequest: 70 [WARN] - Status code is: 200
+[2026-04-02] 11:46:41:075 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:41:075 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Miquel","email":"nila.leannon@yahoo.com","gender":"Male","status":"inactive"}
+[2026-04-02] 11:46:41:624 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:41:625 HttpRequest: 69 [WARN] - {
+    "id": 8421396,
+    "name": "Miquel",
+    "email": "nila.leannon@yahoo.com",
+    "gender": "male",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:41:626 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:41:631 HttpRequest: 30 [INFO] - Performed GET public/v2/users/8421396
+[2026-04-02] 11:46:42:133 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:42:134 HttpRequest: 69 [WARN] - {
+    "id": 8421396,
+    "name": "Miquel",
+    "email": "nila.leannon@yahoo.com",
+    "gender": "male",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:42:135 HttpRequest: 70 [WARN] - Status code is: 200
+[2026-04-02] 11:46:42:147 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:42:148 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Aleen","email":"clemente.morar@gmail.com","gender":"Male","status":"inactive"}
+[2026-04-02] 11:46:42:689 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:42:690 HttpRequest: 69 [WARN] - {
+    "id": 8421397,
+    "name": "Aleen",
+    "email": "clemente.morar@gmail.com",
+    "gender": "male",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:42:691 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:42:698 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:42:698 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Lindsey","email":"garth.zieme@gmail.com","gender":"Male","status":"active"}
+[2026-04-02] 11:46:43:226 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:43:227 HttpRequest: 69 [WARN] - {
+    "id": 8421398,
+    "name": "Lindsey",
+    "email": "garth.zieme@gmail.com",
+    "gender": "male",
+    "status": "active"
+}
+[2026-04-02] 11:46:43:228 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:43:768 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:43:769 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Kerstin","email":"hershel.harber@hotmail.com","gender":"Male","status":"active"}
+[2026-04-02] 11:46:44:288 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:44:290 HttpRequest: 69 [WARN] - {
+    "id": 8421399,
+    "name": "Kerstin",
+    "email": "hershel.harber@hotmail.com",
+    "gender": "male",
+    "status": "active"
+}
+[2026-04-02] 11:46:44:291 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:44:297 HttpRequest: 30 [INFO] - Performed GET public/v2/users
+[2026-04-02] 11:46:44:805 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:44:807 HttpRequest: 69 [WARN] - [
+    {
+        "id": 8421399,
+        "name": "Kerstin",
+        "email": "hershel.harber@hotmail.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8421398,
+        "name": "koko Shnene",
+        "email": "vatafa1775105203231@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421397,
+        "name": "Aleen",
+        "email": "clemente.morar@gmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421396,
+        "name": "Miquel",
+        "email": "nila.leannon@yahoo.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421395,
+        "name": "Osvaldo",
+        "email": "gretchen.effertz@gmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421394,
+        "name": "Malvina",
+        "email": "chang.gulgowski@gmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421393,
+        "name": "Deonna",
+        "email": "theron.kuhic@yahoo.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421392,
+        "name": "Leena",
+        "email": "reed.skiles@gmail.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8421391,
+        "name": "Shannon",
+        "email": "jon.legros@hotmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421389,
+        "name": "Keenan",
+        "email": "harley.denesik@hotmail.com",
+        "gender": "female",
+        "status": "inactive"
+    }
+]
+[2026-04-02] 11:46:44:807 HttpRequest: 70 [WARN] - Status code is: 200
+[2026-04-02] 11:46:44:818 CsvUtils: 43 [INFO] - CSV file successfully created: src/test/resources/users.csv
+[2026-04-02] 11:46:44:843 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:44:843 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Zaida","email":"guillermina.wunsch@gmail.com","gender":"Female","status":"active"}
+[2026-04-02] 11:46:45:375 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:45:377 HttpRequest: 69 [WARN] - {
+    "id": 8421400,
+    "name": "Zaida",
+    "email": "guillermina.wunsch@gmail.com",
+    "gender": "female",
+    "status": "active"
+}
+[2026-04-02] 11:46:45:377 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:45:383 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:45:384 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"","email":"darrell.hegmann@hotmail.com","gender":"male","status":"active"}
+[2026-04-02] 11:46:45:914 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:45:914 HttpRequest: 69 [WARN] - [
+    {
+        "field": "name",
+        "message": "can't be blank"
+    }
+]
+[2026-04-02] 11:46:45:917 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 11:46:45:960 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:45:961 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Lorena","email":"tamra.wunsch@gmail.com","gender":"Male","status":"inactive"}
+[2026-04-02] 11:46:46:545 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:46:546 HttpRequest: 69 [WARN] - {
+    "id": 8421401,
+    "name": "Lorena",
+    "email": "tamra.wunsch@gmail.com",
+    "gender": "male",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:46:547 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:47:028 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:47:028 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Sidney","email":"blondell.lubowitz@gmail.com","gender":"Female","status":"inactive"}
+[2026-04-02] 11:46:47:538 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:47:539 HttpRequest: 69 [WARN] - {
+    "id": 8421402,
+    "name": "Sidney",
+    "email": "blondell.lubowitz@gmail.com",
+    "gender": "female",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:47:540 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:47:545 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:47:546 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Bernita","email":"nelle.wiegand@hotmail.com","gender":"Female","status":"inactive"}
+[2026-04-02] 11:46:48:073 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:48:074 HttpRequest: 69 [WARN] - {
+    "id": 8421403,
+    "name": "Bernita",
+    "email": "nelle.wiegand@hotmail.com",
+    "gender": "female",
+    "status": "inactive"
+}
+[2026-04-02] 11:46:48:075 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:48:656 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:48:656 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Chassidy","email":"twyla.stoltenberg@yahoo.com","gender":"Male","status":"active"}
+[2026-04-02] 11:46:49:183 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:49:184 HttpRequest: 69 [WARN] - {
+    "id": 8421404,
+    "name": "Chassidy",
+    "email": "twyla.stoltenberg@yahoo.com",
+    "gender": "male",
+    "status": "active"
+}
+[2026-04-02] 11:46:49:184 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:49:188 HttpRequest: 30 [INFO] - Performed GET public/v2/users
+[2026-04-02] 11:46:49:735 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:49:737 HttpRequest: 69 [WARN] - [
+    {
+        "id": 8421404,
+        "name": "Chassidy",
+        "email": "twyla.stoltenberg@yahoo.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8421403,
+        "name": "Bernita",
+        "email": "nelle.wiegand@hotmail.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8421402,
+        "name": "Sidney",
+        "email": "blondell.lubowitz@gmail.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8421401,
+        "name": "Lorena",
+        "email": "tamra.wunsch@gmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421400,
+        "name": "Zaida",
+        "email": "guillermina.wunsch@gmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421399,
+        "name": "Kerstin",
+        "email": "hershel.harber@hotmail.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8421398,
+        "name": "koko Shnene",
+        "email": "vatafa1775105203231@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8421397,
+        "name": "Aleen",
+        "email": "clemente.morar@gmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421396,
+        "name": "Miquel",
+        "email": "nila.leannon@yahoo.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8421395,
+        "name": "Osvaldo",
+        "email": "gretchen.effertz@gmail.com",
+        "gender": "female",
+        "status": "active"
+    }
+]
+[2026-04-02] 11:46:49:737 HttpRequest: 70 [WARN] - Status code is: 200
+[2026-04-02] 11:46:49:746 CsvUtils: 43 [INFO] - CSV file successfully created: src/test/resources/users.csv
+[2026-04-02] 11:46:49:748 CsvUtils: 77 [INFO] - CSV file successfully read: src/test/resources/users.csv, total users: 10
+[2026-04-02] 11:46:49:795 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:49:796 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Raelene","email":"freddie.bailey@yahoo.com","gender":"Male","status":"active"}
+[2026-04-02] 11:46:50:312 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:50:313 HttpRequest: 69 [WARN] - {
+    "id": 8421405,
+    "name": "Raelene",
+    "email": "freddie.bailey@yahoo.com",
+    "gender": "male",
+    "status": "active"
+}
+[2026-04-02] 11:46:50:313 HttpRequest: 70 [WARN] - Status code is: 201
+[2026-04-02] 11:46:50:317 HttpRequest: 37 [INFO] - Performed POST public/v2/users
+[2026-04-02] 11:46:50:317 HttpRequest: 38 [INFO] - Body is {"id":null,"name":"Test User","email":"valid1775105210316@test.com","gender":"attack_helicopter","status":"active"}
+[2026-04-02] 11:46:50:843 HttpRequest: 68 [WARN] - Response is: 
+[2026-04-02] 11:46:50:844 HttpRequest: 69 [WARN] - [
+    {
+        "field": "gender",
+        "message": "can't be blank, can be male of female"
+    }
+]
+[2026-04-02] 11:46:50:844 HttpRequest: 70 [WARN] - Status code is: 422
+[2026-04-02] 12:20:34:691 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 12:20:34:735 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+[2026-04-02] 12:20:54:219 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 12:20:54:256 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+[2026-04-02] 12:23:27:817 WebDriverManager: 1220 [INFO] - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+[2026-04-02] 12:23:27:858 WebDriverManager: 1282 [INFO] - Exporting webdriver.chrome.driver as C:\Users\Vaish\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
