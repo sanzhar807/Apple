@@ -32,7 +32,7 @@ public class BaseTest {
 protected static IFrameHelper iFrameHelper;
 
     @BeforeEach
-    public  void setUpBrowser(){
+    public void setUpBrowser() {
         driver = DriverManager.getDriver();
         textBoxPage = new TextBoxPage();
         webTables = new WebTables();
@@ -46,13 +46,10 @@ protected static IFrameHelper iFrameHelper;
         alertHelper = new AlertHelper(driver);
         frame = new Frame();
         iFrameHelper = new IFrameHelper(driver);
-
     }
 
     @AfterEach
-    public  void tearDown(){
+    public void tearDown() {
         DriverManager.closeDriver();
-        driver.close();
-        driver.quit();
     }
 }
