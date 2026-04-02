@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+
+        <Console name="ErrorFatal" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{[yyyy-MM-dd] HH:mm:ss:SSS} %c{1}: %L [%p] - %m%n"/>
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+
+        <Console name="Warn" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{[yyyy-MM-dd] HH:mm:ss:SSS} %c{1}: %L [%p] - %m%n"/>
+            <LevelRangeFilter minLevel="WARN" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+
+        <Console name="Info" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{[yyyy-MM-dd] HH:mm:ss:SSS} %c{1}: %L [%p] - %m%n"/>
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+
+        <Console name="Debug" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{[yyyy-MM-dd] HH:mm:ss:SSS} %c{1}: %L [%p] - %m%n"/>
+            <LevelRangeFilter minLevel="DEBUG" maxLevel="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+
+        <Console name="Trace" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{[yyyy-MM-dd] HH:mm:ss:SSS} %c{1}: %L [%p] - %m%n"/>
+            <LevelRangeFilter minLevel="TRACE" maxLevel="TRACE" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+
+        <RollingFile name="FILES"
+                     fileName="target/logs/module-events.log"
+                     filePattern="target/logs/module-events.log.%d{yyyy-MM-dd}">
+            <PatternLayout pattern="%d{[yyyy-MM-dd] HH:mm:ss:SSS} %c{1}: %L [%p] - %m%n"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org.littleshoot.proxy.impl.ProxyToServerConnection" level="OFF"/>
+        <Root level="INFO">
+            <AppenderRef ref="ErrorFatal"/>
+            <AppenderRef ref="Warn"/>
+            <AppenderRef ref="Info"/>
+            <AppenderRef ref="Debug"/>
+            <AppenderRef ref="Trace"/>
+            <AppenderRef ref="FILES"/>
+        </Root>
+    </Loggers>
+</Configuration>

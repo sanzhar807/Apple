@@ -1,16 +1,10 @@
 package selenium.locators;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.time.Duration;
 
 public class BasicLocators extends BaseUiTest {
     @Test
@@ -83,8 +77,8 @@ public class BasicLocators extends BaseUiTest {
 
     }
 
-    @AfterAll
-    static void after(){
-        driver.quit();
-    }
+//    @AfterAll
+//    static void after(){
+//        driver.quit();
+//    }
 }

@@ -2,6 +2,7 @@ package selenium.locators;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -13,7 +14,7 @@ public class BaseUiTest {
     public static void setUp(){
         WebDriverManager.firefoxdriver().setup();
         driver.manage().window().maximize();
-        driver.manage().timeouts().
-                implicitlyWait(Duration.ofSeconds(10));
+//         driver.manage().timeouts().
+//                implicitlyWait(Duration.ofSeconds(10));
     }
 }
