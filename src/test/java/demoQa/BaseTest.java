@@ -31,8 +31,8 @@ public class BaseTest {
    protected static Frame frame;
 protected static IFrameHelper iFrameHelper;
 
-    @BeforeEach
-    public void setUpBrowser() {
+    @BeforeAll
+    public static void setUpBrowser() {
         driver = DriverManager.getDriver();
         textBoxPage = new TextBoxPage();
         webTables = new WebTables();
@@ -48,8 +48,13 @@ protected static IFrameHelper iFrameHelper;
         iFrameHelper = new IFrameHelper(driver);
     }
 
-    @AfterEach
-    public void tearDown() {
+    @BeforeEach
+    public void checkDriver(){
+        driver = DriverManager.getDriver();
+    }
+
+    @AfterAll
+    public static void tearDown() {
         DriverManager.closeDriver();
     }
 }
