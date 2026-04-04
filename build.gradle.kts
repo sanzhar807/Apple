@@ -65,4 +65,5 @@ tasks.test {
         events("passed", "failed", "skipped")
         showStandardStreams = true
     }
+    systemProperty("selenide.headless", "true")
 }
