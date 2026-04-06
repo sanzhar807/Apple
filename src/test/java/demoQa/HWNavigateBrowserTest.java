@@ -2,8 +2,11 @@ package demoQa;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.example.demoQa.helpers.ElementActions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,7 +17,8 @@ import java.time.Duration;
 import java.util.List;
 
 import static org.example.demoQa.drivers.MozilaWebDriver.driver;
-
+@Tag("UI")
+@Tag("REGRESSION")
 public class HWNavigateBrowserTest extends BaseTest {
 
     @Test
@@ -86,30 +90,32 @@ public class HWNavigateBrowserTest extends BaseTest {
     }
 
 
-    public void findElement(String menu,String element) {
+    public void findElement(String menu, String element) {
         ElementActions elementActions = new ElementActions();
+        try {
+            WebElement ad = driver.findElement(By.id("fixedban"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].remove();", ad);
+        } catch (NoSuchElementException ignored) {}
+
         for (WebElement el : hwNavigateBrowser.listOfMenu()) {
             String menuElement = el.getText();
             if (menuElement.equalsIgnoreCase(menu)) {
-                elementActions.waitElementToBeClickable(el);
-                elementActions.clickBtn(el);
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
+
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
                 wait.until(ExpectedConditions.urlContains(menu.toLowerCase()));
+
                 List<WebElement> koko = driver.findElements(By.xpath("//span[@class = 'text']"));
                 for (WebElement l : koko) {
-                    elementActions.scrollToElement(l);
                     String text = l.getText().trim();
-                    if (!text.isEmpty()) {
-                        WebElement lolo = l.findElement(By.xpath("//span[text()= '" + l.getText()
-                                + "']"));
-                        if(lolo.getText().equalsIgnoreCase(element)){
-                            lolo.click();
-                            //System.out.println("Success");
-                        }
+                    if (text.equalsIgnoreCase(element)) {
+                        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", l);
+                        System.out.println("Success: " + text);
+                        return;
                     }
                 }
+                break;
             }
-            break;
         }
     }
 }

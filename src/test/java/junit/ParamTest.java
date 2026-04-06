@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
-
+@Tag("UNIT")
 public class ParamTest {
     @ParameterizedTest
     @ValueSource(ints = {1,2,3,4,5})

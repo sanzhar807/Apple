@@ -12,6 +12,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 @Tag("Api")
+@Tag("E2E")
+@Tag("REGRESSION")
 public class EndToEnd {
 
     static UserController userController;

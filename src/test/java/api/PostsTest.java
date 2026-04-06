@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 @Tag("Api")
+@Tag("REGRESSION")
 public class PostsTest {
 
     PostController postController =
@@ -28,6 +29,7 @@ public class PostsTest {
     }
 
     @Test
+    @Tag("SMOKE")
     void createPostTest() {
         Post post = Post.builder()
                 .user_id(userId)
@@ -49,6 +51,7 @@ public class PostsTest {
     }
 
     @Test
+    @Tag("SMOKE")
     void getPostsByUserTest() {
         Post post = Post.builder()
                 .user_id(userId)

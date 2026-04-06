@@ -37,7 +37,7 @@ public class WebTables extends BasePage {
     private WebElement editRecord1;
 
     public WebTables clickEdit(){
-        elementActions.clickBtn(editRecord1);
+        elementActions.waitElementToBeClickable(editRecord1);
         return this;
     }
 

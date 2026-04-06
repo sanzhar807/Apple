@@ -2,13 +2,16 @@ package selenium.locators;
 
 
 
+import demoQa.BaseTest;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-
-public class HomeWorkCss extends BaseUiTest {
+@Tag("UI")
+@Tag("REGRESSION")
+public class HomeWorkCss extends BaseTest {
 
     void cssTest() {
         driver.get("https://dostavka312.kg/eda");

@@ -13,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 @Tag("Api")
+@Tag("REGRESSION")
 public class CommentsTest {
 
     PostController postController =

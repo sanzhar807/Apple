@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 @Tag("Api")
+@Tag("REGRESSION")
 public class TodosTest {
 
     TodoController todoController =
@@ -27,6 +28,7 @@ public class TodosTest {
     }
 
     @Test
+    @Tag("SMOKE")
     void createTodoTest() {
         Users random = RandomUtils.generateUsers();
         Users user = userController.createNewUser(random);

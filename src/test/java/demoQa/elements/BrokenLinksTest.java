@@ -14,6 +14,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 @Tag("UI")
+@Tag("REGRESSION")
 public class BrokenLinksTest extends BaseTest {
 
     @FindBy(css = "a[href = 'http://demoqa.com']")

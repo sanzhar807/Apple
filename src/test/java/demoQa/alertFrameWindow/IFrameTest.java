@@ -4,6 +4,7 @@ import demoQa.BaseTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 @Tag("UI")
+@Tag("REGRESSION")
 public class IFrameTest extends BaseTest {
     @Test
     void frameTest(){

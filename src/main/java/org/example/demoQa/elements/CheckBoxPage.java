@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckBoxPage extends BasePage {
 
-    @FindBy(xpath = "//button[@class='rct-collapse rct-collapse-btn']")
+    @FindBy(xpath = "//span[@class='rc-tree-switcher rc-tree-switcher_close']")
     private WebElement homeBtn;
 
     @FindBy(css = "label[for = 'tree-node-desktop']")
@@ -18,13 +18,13 @@ public class CheckBoxPage extends BasePage {
     @FindBy (css = "label[for ='tree-node-commands']")
     private WebElement commands;
 
-    @FindBy (xpath = "//label[@for = 'tree-node-documents']/preceding-sibling::button")
+    @FindBy (xpath = "//span[@aria-label='Select Documents']" +
+            "/preceding-sibling::span[contains(@class, 'rc-tree-switcher')]")
     private WebElement documentsBtn;
     @FindBy(css = "label[for ='tree-node-workspace']")
     private WebElement workSpace;
-    @FindBy (css = "label[for ='tree-node-office']")
+    @FindBy (xpath = "//span[@aria-label='Select Office']")
     private WebElement office;
-
     @FindBy (xpath = "//label[@for = 'tree-node-downloads']/preceding-sibling::button")
     private WebElement downloadsBtn;
     @FindBy(css = "label[for ='tree-node-wordFile']")

@@ -14,22 +14,28 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
+import selenium.locators.BasicLocators;
+import selenium.locators.HW1;
+import selenium.locators.HomeWorkCss;
 
 public class BaseTest {
 
    protected static WebDriver driver;
    protected static TextBoxPage textBoxPage;
    protected static ButtonsPage buttonsPage;
-   protected static AlertPage alertPage;
-   protected static AlertHelper alertHelper;
-   protected static CheckBoxPage checkBoxPage;
-   protected static WebTables webTables;
-   protected static LinksPage linksPage;
-   protected static BroserHelper broserHelper;
-   protected static HWNavigateBrowser hwNavigateBrowser;
-   protected static WindowPage windowPage;
-   protected static Frame frame;
-protected static IFrameHelper iFrameHelper;
+    protected static AlertPage alertPage;
+    protected static AlertHelper alertHelper;
+    protected static CheckBoxPage checkBoxPage;
+    protected static WebTables webTables;
+    protected static LinksPage linksPage;
+    protected static BroserHelper broserHelper;
+    protected static HWNavigateBrowser hwNavigateBrowser;
+    protected static WindowPage windowPage;
+    protected static Frame frame;
+    protected static IFrameHelper iFrameHelper;
+    protected static BasicLocators basicLocators;
+    protected static HomeWorkCss homeWorkCss;
+    protected static HW1 hw1;
 
     @BeforeAll
     public static void setUpBrowser() {
@@ -46,6 +52,9 @@ protected static IFrameHelper iFrameHelper;
         alertHelper = new AlertHelper(driver);
         frame = new Frame();
         iFrameHelper = new IFrameHelper(driver);
+        basicLocators = new BasicLocators();
+        homeWorkCss = new HomeWorkCss();
+        hw1 = new HW1();
     }
 
     @BeforeEach

@@ -105,11 +105,11 @@ public class PractiseForm extends BasePage {
 
     public PractiseForm chooseGender(String name){
         switch (name){
-            case "Male": male.click();
+            case "Male": elementActions.waitElementToBeClickable(male);
             break;
-            case "Female":female.click();
+            case "Female":elementActions.waitElementToBeClickable(female);
             break;
-            case "Other":other.click();
+            case "Other":elementActions.waitElementToBeClickable(other);
             break;
             default:{
                 throw new IllegalArgumentException("not found");

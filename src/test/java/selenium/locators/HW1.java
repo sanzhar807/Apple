@@ -1,15 +1,21 @@
 package selenium.locators;
 
 
+import demoQa.BaseTest;
+import org.example.demoQa.helpers.ElementActions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+@Tag("UI")
+public class HW1 extends BaseTest {
 
-public class HW1 extends  BaseUiTest{
+    ElementActions elementActions = new ElementActions();
 
     @Test
+    @Tag("SMOKE")
     void registration(){
         driver.get("https://demoqa.com/text-box");
         WebElement fullName = driver.findElement(By.id("userName"));
@@ -21,7 +27,7 @@ public class HW1 extends  BaseUiTest{
         WebElement permanentAddress = driver.findElement(By.id("permanentAddress"));
         permanentAddress.sendKeys("koko 123");
         WebElement submit = driver.findElement(By.id("submit"));
-        submit.click();
+        elementActions.waitElementToBeClickable(submit);
         WebElement fullName1 = driver.findElement(By.id("name"));
         final String cos1 = "Name:Nurmagamedov Khabib";
         assertEquals(cos1,fullName1.getText());

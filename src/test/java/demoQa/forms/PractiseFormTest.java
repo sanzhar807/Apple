@@ -12,7 +12,7 @@ public class PractiseFormTest extends BasePractiseForn {
         //practiseForm.fillDateOfBirth("06 Feb 2014");
         // practiseForm.fillSubject("English");
 
-        //driver.get("https://demoqa.com/automation-practice-form");
+        driver.get("https://demoqa.com/automation-practice-form");
         practiseForm.fillFirstName("Andrei").fillLastName("Ramisov").fillEmail("koko@gmail.com")
                 .selectDOB("11 September 2002")
                 .chooseGender("Female").fillMobileNumber("1234567890").chooseHobbies("Music")
