@@ -1,6 +1,14 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(
+            name: 'TEST_SUITE',
+            choices: ['ALL', 'API', 'E2E', 'REGRESSION', 'SMOKE', 'UI', 'DB'],
+            description: 'Выбери какие тесты запустить'
+        )
+    }
+
     stages {
 
         stage('Checkout') {
@@ -11,7 +19,23 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'gradlew.bat clean test || exit 0'
+                script {
+                    if (params.TEST_SUITE == 'ALL') {
+                        bat 'gradlew.bat clean test || exit 0'
+                    } else if (params.TEST_SUITE == 'API') {
+                        bat 'gradlew.bat clean apiTest || exit 0'
+                    } else if (params.TEST_SUITE == 'E2E') {
+                        bat 'gradlew.bat clean e2eTest || exit 0'
+                    } else if (params.TEST_SUITE == 'REGRESSION') {
+                        bat 'gradlew.bat clean regressionTest || exit 0'
+                    } else if (params.TEST_SUITE == 'SMOKE') {
+                        bat 'gradlew.bat clean smokeTest || exit 0'
+                    } else if (params.TEST_SUITE == 'UI') {
+                        bat 'gradlew.bat clean uiTest || exit 0'
+                    } else if (params.TEST_SUITE == 'DB') {
+                        bat 'gradlew.bat clean dbTest || exit 0'
+                    }
+                }
             }
         }
 
@@ -25,13 +49,7 @@ pipeline {
 
         stage('Telegram Notification') {
             steps {
-                script {
-                    def jarPath = "${WORKSPACE}/notifications/allure-notifications-4.6.1.jar"
-                    def configPath = "${WORKSPACE}/notifications/config.json"
-                    bat """
-                        java -DconfigFile=${configPath} -jar ${jarPath}
-                    """
-                }
+                bat "java -DconfigFile=notifications/config.json -jar notifications/allure-notifications-4.6.1.jar"
             }
         }
     }
@@ -41,6 +59,12 @@ pipeline {
             allure([
                 results: [[path: 'build/allure-results']]
             ])
+        }
+        success {
+            echo 'Тесты прошли успешно!'
+        }
+        failure {
+            echo 'Есть упавшие тесты!'
         }
     }
 }

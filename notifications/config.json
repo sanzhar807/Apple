@@ -1,16 +1,16 @@
 {
   "base": {
-    "project": "${JOB_BASE_NAME}",
-    "environment": "some env",
-    "comment": "some comment",
-    "reportLink": "${BUILD_URL}",
-    "language": "en",
-    "allureFolder": "allure-report",
+    "project": "AutomationExercise",
+    "environment": "gorest.co.in",
+    "comment": "Результаты тестов",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "build/allure-results",
     "enableChart": true
   },
   "telegram": {
     "token": "8623769197:AAGNDE8TcyxQJqvp6kPs8-GPXABf9XJDFk4",
-    "chat": "-1001095273807",
+    "chat": "1095273807",
     "replyTo": "",
     "templatePath": "/templates/telegram.ftl"
   }
